@@ -2,30 +2,30 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/app.js",
+      "src": "/app.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/manga(.*)",
-      "dest": "server/app.js"
+      "dest": "/app.js"
     },
     {
       "src": "/api/mangaList(.*)",
-      "dest": "server/app.js"
+      "dest": "/app.js"
     },
     {
       "src": "/api/search(.*)",
-      "dest": "server/app.js"
+      "dest": "/app.js"
     },
     {
       "src": "/status",
-      "dest": "server/app.js"
+      "dest": "/app.js"
     },
     {
       "src": "/(.*)",
-      "dest": "server/app.js"
+      "dest": "/app.js"
     }
   ]
 }
